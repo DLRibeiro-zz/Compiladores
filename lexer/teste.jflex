@@ -51,7 +51,7 @@ whitespace = {LineTerminator} | [ \t\f]
 pontuation      = [;.,=]
 delimitador     = ["(" ")" "[" "]" "{" "}"]
 op              = ([< "+" "-" "*" "!"]) | ([=][=]) | ([!][=])|([&][&])
-comentario      = ([/][/]([^\n])*[\n]) | ([/]["*"]([.])*["*"][/]) 
+comentario      = ([/][/]([^\n])*[\n]) | "/*"~"*/"
 intLiteral      = [1-9]({digit})*
 
 %%
